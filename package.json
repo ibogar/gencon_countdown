@@ -2,11 +2,15 @@
   "name": "gencon_countdown",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4"
+  }
 }
