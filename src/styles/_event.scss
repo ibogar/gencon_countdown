@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+.events {
+    background: linear-gradient(
+        160deg,
+        $backgroundColor1 0%,
+        $backgroundColor2 50%,
+        $backgroundColor3 100%
+    );
+    &__section {
+        padding: 4rem 0;
+    
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+    
+            @media (max-width: 640px) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        &--reverse {    
+            .container {
+                flex-direction: row-reverse;
+    
+                @media (max-width: 640px) {
+                    flex-direction: column;
+                }
+            }
+        }   
+    }
+    &__text {
+        flex: 1;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+    }
+
+    img {
+        flex: 1;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
