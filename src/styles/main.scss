@@ -19,3 +19,24 @@
         max-width: 80%;
     }
 }
+
+.footer {
+    padding: 4rem;
+    text-align: center;
+    background-color: #212145;
+    
+    &__content {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding-top: 2rem;
+        
+        p {
+            color: #484899;
+            padding-bottom: .5rem;
+        }
+        a {
+            text-decoration: none;
+            color: #484899
+        }
+    }
+}
