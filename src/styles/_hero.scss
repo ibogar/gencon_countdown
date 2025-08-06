@@ -1,0 +1,88 @@
+.hero {
+    position: relative;
+    min-height: 70vh;
+    background-image: url(../images/gencon_stadium_photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    color: #fff;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0; 
+        background: rgba(0, 0, 0, 0.7); 
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        img {
+            height: 3rem;
+        }
+    }
+
+    &__event_information {
+        position: relative;
+        z-index: 2;
+        max-width: 80%;
+        margin: 0 auto;
+        border: 3px solid #fff;
+        border-radius: 25px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                padding-right: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                b {
+                    padding-bottom: .5rem;
+                }
+            }
+        }
+    }
+
+    &__button {
+        position: relative;
+        z-index: 2;
+        border-radius: 15px;
+        background-color: #fff;
+        color: #000;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &__photo_attribution {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+        z-index: 2;
+        font-size: 0.75rem;
+        color: #aaa;
+
+        &__link {
+            color: #aaa;
+            text-decoration: none;
+        }
+    }
+}
